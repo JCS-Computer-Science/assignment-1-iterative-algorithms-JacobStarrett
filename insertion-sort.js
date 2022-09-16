@@ -1,12 +1,18 @@
 function insertionSort(array) {
 	
-	for(var i=0;i<array.length;i++){
-		if(array[i]>array[i+1]){
-			let temp=array[i+1]
-			array[i+1]=array[i]
-			array[i]=temp
+	for(let i=0;i<array.length;i++){
+
+		for (let q = 0; q < (array.length- i - 1); q++){
+		if(array[q]>array[q+1]){
+			let temp=array[q]
+			array[q]=array[q+1]
+			array[q+1]=temp
 		}
+		
 	}
+
+	
+}
 
 
 

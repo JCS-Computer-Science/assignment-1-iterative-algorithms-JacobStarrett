@@ -5,12 +5,12 @@ function binarySearch(array, searchTerm) {
 
 	while(start<=end){
 		let mid = Math.floor((start+end)/2);
-		if(array[mid]==searchTerm){
-			return searchTerm;
+		if(array[mid]===searchTerm){
+			return mid;
 		}else if(array[mid]<searchTerm){
 			start = mid +1;
 		}else{
-			start=mid-1
+			end=mid-1
 		}
 	}
 

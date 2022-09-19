@@ -1,17 +1,13 @@
 function linearSearch(array, searchTerm) {
 	
-	for(let i = 0; i<=array.length;i++){
-		if(i===searchTerm){
+	for(let i = 0; i<array.length;i++){
+		if(array[i]===searchTerm){
 			return i;
-		}
+		} 
 	}
 
+return -1;
 
-
-
-
-
-	//return null;
 }
 
 module.exports = linearSearch;
